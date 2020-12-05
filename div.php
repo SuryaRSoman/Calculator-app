@@ -10,17 +10,17 @@
 <body class="bg">
     <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
         <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Addition</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="sub.php">Subtraction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mul.php">Multiplication</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Addition</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sub.html">Subtraction</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mul.html">Multiplication</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="div.html">Division</a>
+            <a class="nav-link" href="div.php">Division</a>
           </li>
         </ul>
       </nav>
@@ -40,11 +40,11 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button onclick="add()" class="btn btn-success btn-lg btn-block" >ADD</button></td>
+                        <td><button onclick="add()" class="btn btn-success btn-lg btn-block" >DIVIDE</button></td>
                     </tr>
                     <tr>
                         <td>Result</td>
-                        <td><input type="text" class="form-control" placeholder="Sum" id="sum"></td>
+                        <td><input type="text" class="form-control " placeholder="Quotient" id="div"></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -67,11 +67,11 @@
         var getnum1 = parseInt(document.getElementById("num1").value);
             var getnum2 = parseInt(document.getElementById("num2").value);
 
-          
+         
             
             if(Number.isInteger(getnum1 && getnum2)){
-              res=getnum1+getnum2
-              document.getElementById("sum").value=res;
+              res=getnum1/getnum2
+              document.getElementById("div").value=res;
             }
             else{
               alert("Enter a number")
@@ -82,7 +82,7 @@
     function clr() {
             document.getElementById("num1").value=''
             document.getElementById("num2").value=''
-            document.getElementById("sum").value=''
+            document.getElementById("div").value=''
         }
 
     </script>
