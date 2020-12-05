@@ -1,0 +1,12 @@
+.bg{
+    background-image: url(../images/bg13.jpg);
+}
+.dv{
+    margin-top: 10%;
+    background-color: rgb(92, 89, 89);
+    border-radius: 5%;
+}
+
+td{
+    color: white;
+}
